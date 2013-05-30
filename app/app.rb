@@ -7,6 +7,14 @@ module SamplePadrino
     register Padrino::Helpers
 
     enable :sessions
+    
+    get '/' do
+      'Home Page'
+    end
+
+    get :about, map: '/about_us' do
+      render :haml, "%p This is a sample padrino created to demonstrate how Padrino works"
+    end
 
     ##
     # Caching support
