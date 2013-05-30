@@ -2,6 +2,10 @@
 
 Sample of padrino related development and deployment
 
+## Demo
+
+heroku:<br/>
+http://padrino-sample.herokuapp.com
 
 ## How
 
