@@ -18,7 +18,11 @@ gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'sass'
 gem 'haml'
 gem 'activerecord', '>= 3.1', :require => 'active_record'
-gem 'sqlite3', group: [:test, :development]
+group :test, :development do
+  gem 'sqlite3'
+  gem 'awesome_print'
+  gem 'pry-debugger'
+end
 
 # Test requirements
 gem 'shoulda', :group => 'test'
@@ -26,6 +30,7 @@ gem 'rack-test', :require => 'rack/test', :group => 'test'
 
 # Padrino Stable Gem
 gem 'padrino', '0.11.2'
+
 
 # Or Padrino Edge
 # gem 'padrino', :github => 'padrino/padrino-framework'
