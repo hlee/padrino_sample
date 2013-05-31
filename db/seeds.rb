@@ -12,6 +12,7 @@ shell.say ""
 
 account = Account.create(:email => email, :name => "Foo", :surname => "Bar", :password => password, :password_confirmation => password, :role => "admin")
 
+Article.create(title: 'First Article', body: 'simple body here')
 if account.valid?
   shell.say "================================================================="
   shell.say "Account has been successfully created, now you can login with:"
