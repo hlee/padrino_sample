@@ -18,6 +18,7 @@ gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'sass'
 gem 'haml'
 gem 'activerecord', '>= 3.1', :require => 'active_record'
+gem 'racksh'
 group :test, :development do
   gem 'sqlite3'
   gem 'awesome_print'
