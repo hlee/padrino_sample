@@ -9,7 +9,7 @@ module SamplePadrino
     enable :sessions
     
     get '/' do
-      'Home Page'
+      haml :home
     end
 
     get :about, map: '/about_us' do

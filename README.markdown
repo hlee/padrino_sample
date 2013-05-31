@@ -8,8 +8,10 @@ heroku:<br/>
 http://padrino-sample.herokuapp.com<br/>
 http://padrino-sample.herokuapp.com/admin<br/>
 signin:<br/>
-admin@admin.com<br/>
-password<br/>
+User:     admin@admin.com<br/>
+Password: password<br/>
+
+http://padrino-sample.herokuapp.com/articles
 
 ## How
 
