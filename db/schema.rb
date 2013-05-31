@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(:version => 2) do
     t.datetime "updated_at",       :null => false
   end
 
-  create_table "artiles", :force => true do |t|
+  create_table "articles", :force => true do |t|
     t.string   "title"
     t.text     "body"
     t.datetime "created_at", :null => false

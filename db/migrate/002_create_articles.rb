@@ -1,6 +1,6 @@
-class CreateArtiles < ActiveRecord::Migration
+class CreateArticles < ActiveRecord::Migration
   def self.up
-    create_table :artiles do |t|
+    create_table :articles do |t|
       t.string :title
       t.text :body
       t.timestamps
@@ -8,6 +8,6 @@ class CreateArtiles < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :artiles
+    drop_table :articles
   end
 end

@@ -20,12 +20,12 @@ SamplePadrino::App.controllers :articles do
   # end
   
   get :index do
-    @artiles = Article.all(order: 'created_at desc')
+    @articles = Article.all(order: 'created_at desc')
     render 'articles/index'
   end
 
-  get :show do
-
+  get :show, with: :id do
+    @article = Article.find_by_id params[:id]
+    render 'articles/show'
   end
-
 end

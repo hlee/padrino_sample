@@ -1,3 +1,3 @@
-class Artile < ActiveRecord::Base
+class Article < ActiveRecord::Base
 
 end
