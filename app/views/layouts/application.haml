@@ -1,4 +1,4 @@
-# app/views/layouts/application.haml
+-# app/views/layouts/application.haml
 !!! Strict
 %html
   %head
@@ -15,21 +15,11 @@
     #container
       #main= yield
       #sidebar
-        - form_tag url_for(:aricles, :index), :method => 'get'  do
+        - form_tag url_for(:articles, :index), :method => 'get'  do
           Search for:
           = text_field_tag 'query', :value => params[:query]
           = submit_tag 'Search'
         %p Recent Posts
-        %ul.bulleted
-          %li Item 1 - Lorem ipsum dolorum itsum estem
-          %li Item 2 - Lorem ipsum dolorum itsum estem
-          %li Item 3 - Lorem ipsum dolorum itsum estem
-        %p Categories
-        %ul.bulleted
-          %li Item 1 - Lorem ipsum dolorum itsum estem
-          %li Item 2 - Lorem ipsum dolorum itsum estem
-          %li Item 3 - Lorem ipsum dolorum itsum estem
-        %p Latest Comments
         %ul.bulleted
           %li Item 1 - Lorem ipsum dolorum itsum estem
           %li Item 2 - Lorem ipsum dolorum itsum estem
