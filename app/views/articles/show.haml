@@ -5,4 +5,6 @@
     .title= @article.title
     .date= time_ago_in_words(@article.created_at || Time.now) + 'ago'
     .body= simple_format(@article.body)
+    .details
+      .author Posted by #{@article.account.email}
 %p= link_to 'View all posts', url_for(:articles, :index)

@@ -3,3 +3,5 @@
   .title= link_to article.title, url_for(:articles, :show, id: article)
   .date= time_ago_in_words(article.created_at || Time.now) + 'ago'
   .body= simple_format(article.body)
+  .details
+    .author Posted by #{article.account.email}

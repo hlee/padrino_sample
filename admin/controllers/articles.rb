@@ -13,9 +13,10 @@ SamplePadrino::Admin.controllers :articles do
 
   post :create do
     @article = Article.new(params[:article])
+    @article.account = current_account
     if @article.save
       @title = pat(:create_title, :model => "article #{@article.id}")
-      flash[:success] = pat(:create_success, :model => 'Article')
+      flash[:success] = pat(:create_success, :model => 'Articlele')
       params[:save_and_continue] ? redirect(url(:articles, :index)) : redirect(url(:articles, :edit, :id => @article.id))
     else
       @title = pat(:create_title, :model => 'article')
