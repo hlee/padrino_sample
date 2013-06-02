@@ -19,7 +19,7 @@ SamplePadrino::App.controllers :articles do
   #   'Hello world!'
   # end
   
-  get :index do
+  get :index, provides: [:html, :rss, :atom] do
     @articles = Article.all(order: 'created_at desc')
     render 'articles/index'
   end

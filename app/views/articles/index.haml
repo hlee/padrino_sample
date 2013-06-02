@@ -1,3 +1,6 @@
 -# app/views/articles/index.haml
 - @title = 'Welcome'
+- content_for :include do
+  = feed_tag(:rss, url(:articles, :index, format: :rss), title: 'RSS')
+  = feed_tag(:atom, url(:articles, :index, format: :atom), title: 'ATOM')
 #articles= partial 'articles/article', collection: @articles
