@@ -11,6 +11,9 @@ signin:<br />
 User:     admin@admin.com<br />
 Password: password<br />
 http://padrino-sample.herokuapp.com/articles<br />
+http://padrino-sample.herokuapp.com/articles.rss<br />
+http://padrino-sample.herokuapp.com/articles.atom<br />
+
 
 
 ## How
